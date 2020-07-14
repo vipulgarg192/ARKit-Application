@@ -1,37 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pkw-7J-gWR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tXr-a1-R10">
+        <!--WomenUI-->
+        <scene sceneID="zFv-oW-aK5">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <viewController id="sdP-xD-mIh" customClass="WomenUI" customModule="ARDice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7oG-A2-RJh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AmR-qa-obp">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </arscnView>
                         </subviews>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="GsS-dJ-CKf"/>
-                            <constraint firstItem="BrB-h1-WRS" firstAttribute="bottom" secondItem="fQZ-KI-GVf" secondAttribute="bottom" id="VpT-BR-CcM"/>
-                            <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="XyZ-9z-H8e"/>
-                            <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="rJc-2c-zQA"/>
+                            <constraint firstItem="N9q-az-Tom" firstAttribute="trailing" secondItem="AmR-qa-obp" secondAttribute="trailing" id="Lcj-BD-mol"/>
+                            <constraint firstItem="AmR-qa-obp" firstAttribute="top" secondItem="N9q-az-Tom" secondAttribute="top" id="frs-gJ-wrJ"/>
+                            <constraint firstItem="AmR-qa-obp" firstAttribute="leading" secondItem="N9q-az-Tom" secondAttribute="leading" id="iMF-Ow-mMh"/>
+                            <constraint firstItem="N9q-az-Tom" firstAttribute="bottom" secondItem="AmR-qa-obp" secondAttribute="bottom" id="rGt-FO-4st"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
+                        <viewLayoutGuide key="safeArea" id="N9q-az-Tom"/>
                     </view>
                     <connections>
-                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                        <outlet property="sceneView" destination="AmR-qa-obp" id="GW6-f5-bBC"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1oZ-T7-fXN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-271" y="814"/>
+        </scene>
+        <!--Ruller-->
+        <scene sceneID="Qcx-DJ-8fN">
+            <objects>
+                <viewController id="eh8-RM-3jG" customClass="ARRuller" customModule="ARDice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NWZ-xn-PvP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p2j-ch-vbY">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Jt1-gs-fUN" firstAttribute="trailing" secondItem="p2j-ch-vbY" secondAttribute="trailing" id="8Ex-gK-Zrv"/>
+                            <constraint firstItem="Jt1-gs-fUN" firstAttribute="bottom" secondItem="p2j-ch-vbY" secondAttribute="bottom" id="OjM-0C-bLy"/>
+                            <constraint firstItem="p2j-ch-vbY" firstAttribute="leading" secondItem="Jt1-gs-fUN" secondAttribute="leading" id="e0W-Yx-PPP"/>
+                            <constraint firstItem="p2j-ch-vbY" firstAttribute="top" secondItem="Jt1-gs-fUN" secondAttribute="top" id="tRD-Ne-4Mk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Jt1-gs-fUN"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="p2j-ch-vbY" id="6yt-fK-8E4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jli-DP-9HY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="895.6521739130435" y="475.44642857142856"/>
+        </scene>
+        <!--Ar View Class-->
+        <scene sceneID="3Wh-d2-d3Y">
+            <objects>
+                <viewController id="IPH-fU-azO" customClass="ArViewClass" customModule="ARDice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x1k-7W-yCy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="txC-WH-nkV">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </arView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZeV-hU-w9S" firstAttribute="bottom" secondItem="txC-WH-nkV" secondAttribute="bottom" id="5c8-Zu-UZ5"/>
+                            <constraint firstItem="txC-WH-nkV" firstAttribute="top" secondItem="ZeV-hU-w9S" secondAttribute="top" id="BH4-Es-SHn"/>
+                            <constraint firstItem="txC-WH-nkV" firstAttribute="leading" secondItem="ZeV-hU-w9S" secondAttribute="leading" id="Y0H-MA-awu"/>
+                            <constraint firstItem="ZeV-hU-w9S" firstAttribute="trailing" secondItem="txC-WH-nkV" secondAttribute="trailing" id="oz9-ja-la4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZeV-hU-w9S"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="txC-WH-nkV" id="YyZ-4w-mJb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U3i-ha-wfd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2173" y="1135"/>
+        </scene>
+        <!--Image TrackingUI-->
+        <scene sceneID="wEI-CV-a6X">
+            <objects>
+                <viewController id="pkw-7J-gWR" customClass="ImageTrackingUI" customModule="ARDice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="waB-Ip-JJY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSP-TX-eFO">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3Rz-eh-Xen" firstAttribute="trailing" secondItem="cSP-TX-eFO" secondAttribute="trailing" id="8ix-Ry-OzX"/>
+                            <constraint firstItem="cSP-TX-eFO" firstAttribute="top" secondItem="3Rz-eh-Xen" secondAttribute="top" id="Opv-8J-vhz"/>
+                            <constraint firstItem="3Rz-eh-Xen" firstAttribute="bottom" secondItem="cSP-TX-eFO" secondAttribute="bottom" id="fsU-Ky-8xL"/>
+                            <constraint firstItem="cSP-TX-eFO" firstAttribute="leading" secondItem="3Rz-eh-Xen" secondAttribute="leading" id="zJt-r1-dLL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3Rz-eh-Xen"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="cSP-TX-eFO" id="EEe-aJ-U25"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tk5-ct-Dl5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3577" y="1647"/>
         </scene>
     </scenes>
 </document>

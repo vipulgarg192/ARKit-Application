@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1012AD9124B7B17B0094C022 /* ArViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1012AD9024B7B17B0094C022 /* ArViewClass.swift */; };
+		1012AD9724B7BA380094C022 /* women1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 1012AD9624B7BA380094C022 /* women1.usdz */; };
+		1012AD9924BD553B0094C022 /* ImageTrackingUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1012AD9824BD553B0094C022 /* ImageTrackingUI.swift */; };
+		10204D2124B64BB400E2BFA3 /* WomenUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10204D2024B64BB400E2BFA3 /* WomenUI.swift */; };
 		106E9F4C24ABC5B0003E7AB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106E9F4B24ABC5B0003E7AB9 /* AppDelegate.swift */; };
 		106E9F4E24ABC5B0003E7AB9 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 106E9F4D24ABC5B0003E7AB9 /* art.scnassets */; };
 		106E9F5024ABC5B0003E7AB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106E9F4F24ABC5B0003E7AB9 /* ViewController.swift */; };
 		106E9F5324ABC5B0003E7AB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 106E9F5124ABC5B0003E7AB9 /* Main.storyboard */; };
 		106E9F5524ABC5B2003E7AB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 106E9F5424ABC5B2003E7AB9 /* Assets.xcassets */; };
 		106E9F5824ABC5B2003E7AB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 106E9F5624ABC5B2003E7AB9 /* LaunchScreen.storyboard */; };
+		106E9F8024AD1354003E7AB9 /* ARRuller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106E9F7F24AD1354003E7AB9 /* ARRuller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1012AD9024B7B17B0094C022 /* ArViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArViewClass.swift; sourceTree = "<group>"; };
+		1012AD9624B7BA380094C022 /* women1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = women1.usdz; sourceTree = "<group>"; };
+		1012AD9824BD553B0094C022 /* ImageTrackingUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTrackingUI.swift; sourceTree = "<group>"; };
+		10204D2024B64BB400E2BFA3 /* WomenUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomenUI.swift; sourceTree = "<group>"; };
 		106E9F4824ABC5B0003E7AB9 /* ARDice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARDice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		106E9F4B24ABC5B0003E7AB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		106E9F4D24ABC5B0003E7AB9 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -24,6 +33,7 @@
 		106E9F5424ABC5B2003E7AB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		106E9F5724ABC5B2003E7AB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		106E9F5924ABC5B2003E7AB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		106E9F7F24AD1354003E7AB9 /* ARRuller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARRuller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1012AD9324B7B4930094C022 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1012AD9624B7BA380094C022 /* women1.usdz */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		106E9F3F24ABC5B0003E7AB9 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +74,18 @@
 		106E9F4A24ABC5B0003E7AB9 /* ARDice */ = {
 			isa = PBXGroup;
 			children = (
+				1012AD9324B7B4930094C022 /* Assets */,
 				106E9F4B24ABC5B0003E7AB9 /* AppDelegate.swift */,
 				106E9F4D24ABC5B0003E7AB9 /* art.scnassets */,
 				106E9F4F24ABC5B0003E7AB9 /* ViewController.swift */,
+				106E9F7F24AD1354003E7AB9 /* ARRuller.swift */,
 				106E9F5124ABC5B0003E7AB9 /* Main.storyboard */,
 				106E9F5424ABC5B2003E7AB9 /* Assets.xcassets */,
 				106E9F5624ABC5B2003E7AB9 /* LaunchScreen.storyboard */,
 				106E9F5924ABC5B2003E7AB9 /* Info.plist */,
+				10204D2024B64BB400E2BFA3 /* WomenUI.swift */,
+				1012AD9024B7B17B0094C022 /* ArViewClass.swift */,
+				1012AD9824BD553B0094C022 /* ImageTrackingUI.swift */,
 			);
 			path = ARDice;
 			sourceTree = "<group>";
@@ -126,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				106E9F4E24ABC5B0003E7AB9 /* art.scnassets in Resources */,
+				1012AD9724B7BA380094C022 /* women1.usdz in Resources */,
 				106E9F5824ABC5B2003E7AB9 /* LaunchScreen.storyboard in Resources */,
 				106E9F5524ABC5B2003E7AB9 /* Assets.xcassets in Resources */,
 				106E9F5324ABC5B0003E7AB9 /* Main.storyboard in Resources */,
@@ -139,7 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10204D2124B64BB400E2BFA3 /* WomenUI.swift in Sources */,
+				106E9F8024AD1354003E7AB9 /* ARRuller.swift in Sources */,
+				1012AD9124B7B17B0094C022 /* ArViewClass.swift in Sources */,
 				106E9F5024ABC5B0003E7AB9 /* ViewController.swift in Sources */,
+				1012AD9924BD553B0094C022 /* ImageTrackingUI.swift in Sources */,
 				106E9F4C24ABC5B0003E7AB9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CPNWQDNW8N;
 				INFOPLIST_FILE = ARDice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CPNWQDNW8N;
 				INFOPLIST_FILE = ARDice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
